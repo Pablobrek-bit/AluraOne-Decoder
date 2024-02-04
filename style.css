@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Light-blue-light-blue-100: #f3f5fc;
+  --Dark-blue-dark-blue-300: #0a3871;
+  --White: #fff;
+  --Gray-gray-500: #343a40;
+  --Gray-gray-400: #495057;
+}
+
+.hide {
+  display: none !important;
+}
+
+body {
+  height: 100vh;
+
+  font-family: 'Inter', sans-serif;
+  background-color: var(--Light-blue-light-blue-100);
+}
+
+main {
+  width: 1360px;
+
+  display: flex;
+
+  margin: auto;
+
+  gap: 80px;
+
+  position: relative;
+  top: 40px;
+}
+
+.texts {
+  margin-top: 80px;
+  margin-left: 200px;
+}
+
+.texts textarea {
+  width: 680px;
+  height: 288px;
+
+  color: var(--Dark-blue-dark-blue-300);
+
+  font-size: 32px;
+
+  border: none;
+  background: transparent;
+
+  resize: none;
+
+  outline: none;
+}
+
+.texts textarea::placeholder {
+  color: var(--Dark-blue-dark-blue-300);
+}
+
+.aviso {
+  position: relative;
+  right: 175px;
+}
+
+.bottom-elements {
+  width: 664px;
+
+  position: relative;
+  top: 395px;
+
+  margin-left: 200px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 24px;
+}
+
+.default-button {
+  width: 328px;
+
+  padding: 24px;
+
+  border: 1px solid var(--Dark-blue-dark-blue-300);
+  border-radius: 24px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+}
+
+button:nth-child(1) {
+  background-color: var(--Dark-blue-dark-blue-300);
+  color: var(--White);
+
+  border: none;
+}
+
+button:nth-child(2) {
+  background-color: #d8dfe8;
+  color: var(--Dark-blue-dark-blue-300);
+}
+
+button {
+  transition: box-shadow 0.3s;
+}
+
+button:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.views {
+  width: 400px;
+  height: 944px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 32px;
+  background: var(--White);
+
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+  padding: 32px 32px 32px 32px;
+}
+
+.views-section-text {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 32px;
+
+  gap: 16px;
+}
+
+.views-section-text h1 {
+  text-align: center;
+  color: var(--Gray-gray-500);
+}
+
+.views-section-text span {
+  text-align: center;
+  color: var(--Gray-gray-400);
+}
+
+/*Segunda tela*/
+.views-section-true {
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+}
+.views-section-true span {
+  width: 336px;
+  height: 781px;
+
+  color: var(--Gray-gray-400);
+  font-size: 24px;
+
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
